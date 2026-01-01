@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research — David Petit</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #e6e6e6;
+            line-height: 1.6;
+            background-image: url("StargazingUnderMilkyWay_ChatGPT.png");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-size: 1.1rem;
+            color: #88c0ff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            color: #88c0ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+<div class="overlay">
+
+<header>
+    <h1>Research</h1>
+    <p>Current and past scientific work</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="quotes.html">Quotes</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Exoplanet detection and characterization</li>
+            <li>Astronomical instrumentation</li>
+            <li>CubeSat and small-satellite missions</li>
+            <li>Optical system design</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Publications & Projects</h2>
+        <p>
+            This section will include peer-reviewed papers, preprints, and ongoing projects.
+            (You can later add links to ADS, arXiv, or GitHub here.)
+        </p>
+    </section>
+</div>
+
+<footer>
+    © <span id="year"></span> David Petit
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</div>
+</body>
+</html>
