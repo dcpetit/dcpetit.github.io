@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes — David Petit</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #e6e6e6;
+            line-height: 1.6;
+            background-image: url("StargazingUnderMilkyWay_ChatGPT.png");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-size: 1.1rem;
+            color: #88c0ff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        blockquote {
+            border-left: 4px solid #88c0ff;
+            padding-left: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+<div class="overlay">
+
+<header>
+    <h1>Quotes</h1>
+    <p>Thoughts that inspire curiosity and exploration</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="quotes.html">Quotes</a>
+    </nav>
+</header>
+
+<div class="container">
+    <blockquote>
+        “Somewhere, something incredible is waiting to be known.” — Carl Sagan
+    </blockquote>
+
+    <blockquote>
+        “The universe is under no obligation to make sense to you.” — Neil deGrasse Tyson
+    </blockquote>
+
+    <blockquote>
+        “Equipped with his five senses, man explores the universe around him.” — Edwin Hubble
+    </blockquote>
+</div>
+
+<footer>
+    © <span id="year"></span> David Petit
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</div>
+</body>
+</html>
