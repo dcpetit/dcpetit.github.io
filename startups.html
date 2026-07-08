@@ -1,44 +1,170 @@
-A webpage I'm using to keep track of various start ups
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start-up Tracker — David Petit</title>
 
-<table>
-  <thead>
-    <tr>
-      <th>Company (July 2026)</th>
-      <th>1-sentence summary</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Flux Robotics</td>
-      <td>A solar-powered weed-detecting rover that reduces pesticide use in grain farming by identifying and removing weeds in real time from high-resolution imagery.</td>
-    </tr>
-    <tr>
-      <td>Chefadora</td>
-      <td>A global recipe-sharing platform with an AI cooking assistant that helps creators share and monetize recipes.</td>
-    </tr>
-    <tr>
-      <td>tday.com</td>
-      <td>An AI design tool that automates repetitive design work while maintaining brand consistency.</td>
-    </tr>
-    <tr>
-      <td>Moonlode</td>
-      <td>A company developing multi-layer insulation blankets to help satellites and lunar payloads withstand extreme temperature fluctuations.</td>
-    </tr>
-    <tr>
-      <td>Optible</td>
-      <td>An AI-powered system for grant application screening that helps grant makers quickly select eligible applications with an auditable decision trail.</td>
-    </tr>
-    <tr>
-      <td>Rooo</td>
-      <td>A locally owned mobility “super app” combining rides and services, built to keep drivers’ fares higher and support the Adelaide community.</td>
-    </tr>
-    <tr>
-      <td>UING</td>
-      <td>Touch-free screen control tech for medical and commercial settings, including intraoperative imaging software and a spatial interface to control distant screens.</td>
-    </tr>
-    <tr>
-      <td>SuperIT</td>
-      <td>Agentic-AI support software for IT teams aiming to resolve most standard issues autonomously with fast response times.</td>
-    </tr>
-  </tbody>
-</table>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #e6e6e6;
+      line-height: 1.6;
+      background-image: url("StargazingUnderMilkyWay_ChatGPT.png");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-size: 1.1rem;
+      color: #88c0ff;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .title {
+      color: #fff;
+      margin: 0 0 1rem 0;
+      text-align: center;
+    }
+
+    h2 {
+      color: #88c0ff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(136, 192, 255, 0.35);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    thead th {
+      background: rgba(136, 192, 255, 0.15);
+      color: #b9dcff;
+      text-align: left;
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid rgba(136, 192, 255, 0.35);
+      font-weight: 600;
+    }
+
+    tbody td {
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      vertical-align: top;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody td:first-child {
+      width: 22%;
+      color: #88c0ff;
+    }
+
+    .moonlode {
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay">
+    <header>
+      <h1>A webpage I'm using to keep track of various start-ups</h1>
+      <p>Start-up summaries</p>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="quotes.html">Quotes</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>1-sentence summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flux Robotics</td>
+            <td>A solar-powered weed-detecting rover that reduces pesticide use in grain farming by identifying and removing weeds in real time from high-resolution imagery.</td>
+          </tr>
+          <tr>
+            <td>Chefadora</td>
+            <td>A global recipe-sharing platform with an AI cooking assistant that helps creators share and monetize recipes.</td>
+          </tr>
+          <tr>
+            <td>tday.com</td>
+            <td>An AI design tool that automates repetitive design work while maintaining brand consistency.</td>
+          </tr>
+          <tr>
+            <td class="moonlode">Moonlode</td>
+            <td>A company developing multi-layer insulation blankets to help satellites and lunar payloads withstand extreme temperature fluctuations.</td>
+          </tr>
+          <tr>
+            <td>Optible</td>
+            <td>An AI-powered system for grant application screening that helps grant makers quickly select eligible applications with an auditable decision trail.</td>
+          </tr>
+          <tr>
+            <td>Rooo</td>
+            <td>A locally owned mobility “super app” combining rides and services, built to keep drivers’ fares higher and support the Adelaide community.</td>
+          </tr>
+          <tr>
+            <td>UING</td>
+            <td>Touch-free screen control tech for medical and commercial settings, including intraoperative imaging software and a spatial interface to control distant screens.</td>
+          </tr>
+          <tr>
+            <td>SuperIT</td>
+            <td>Agentic-AI support software for IT teams aiming to resolve most standard issues autonomously with fast response times.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      © <span id="year"></span> David Petit
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </div>
+</body>
+</html>
