@@ -89,6 +89,52 @@
             margin-top: 3rem;
             color: #ccc;
         }
+
+        /* About section with profile picture */
+        .about-intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .profile-picture {
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            object-position: center 40%;
+            border-radius: 50%;
+            border: 3px solid rgba(136, 192, 255, 0.9);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+            flex-shrink: 0;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .about-text p:first-child {
+            margin-top: 0;
+        }
+        
+        /* Responsive layout for mobile devices */
+        @media (max-width: 650px) {
+            .about-intro {
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+            }
+        
+            .profile-picture {
+                width: 200px;
+                height: 200px;
+            }
+        
+            .about-text {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -109,40 +155,70 @@
 <div class="container">
     <section>
         <h2>About Me</h2>
-        
+    
+        <div class="about-intro">
+            <img
+                src="UniSQ_SG_Director_Profile.png"
+                alt="David Petit, PhD candidate in astronomy at the University of Southern Queensland"
+                class="profile-picture"
+                width="240"
+                height="240"
+            />
+    
+            <div class="about-text">
+                <p>
+                    Hello! I'm a Ph.D. student at the
+                    <strong>University of Southern Queensland</strong>,
+                    working at the intersection of
+                    <strong>astronomical instrumentation</strong>,
+                    <strong>CubeSats</strong>, and
+                    <strong>exoplanet science</strong>.
+                </p>
+    
+                <p>
+                    My research involves designing and testing space-based
+                    instruments, developing small-satellite mission concepts,
+                    and exploring innovative techniques for detecting and
+                    characterizing planets beyond our Solar System.
+                </p>
+    
+                <p>
+                    I completed my master's thesis at KU Leuven (Belgium),
+                    where I focused on the direct imaging of exoplanets.
+                    Much of the code from that work is available on my GitHub.
+                    I am currently expanding this research into a manuscript
+                    for submission to a peer-reviewed journal.
+                </p>
+    
+                <p>
+                    In parallel, I continue my work at UniSQ on a range of
+                    astrophysical projects. My current efforts include optical
+                    instrument design, CubeSat development, and broader
+                    initiatives to democratize space-based observational
+                    astronomy.
+                </p>
+            </div>
+        </div>
+    
         <p>
-            Hello! I'm a Ph.D. student at the <strong>University of Southern Queensland</strong>, 
-            working at the intersection of <strong>astronomical instrumentation</strong>, 
-            <strong>CubeSats</strong>, and <strong>exoplanet science</strong>.
+            I'm always open to collaboration, especially on projects involving
+            exoplanet characterization, modeling, observation, or astronomical
+            hardware and software instrumentation.
         </p>
     
         <p>
-            My research involves designing and testing space-based instruments, developing small-satellite 
-            mission concepts, and exploring innovative techniques for detecting and characterizing 
-            planets beyond our Solar System.
+            You can also find my
+            <a
+                href="https://staffprofile.unisq.edu.au/Profile/David-Petit"
+                target="_blank"
+                rel="noopener noreferrer"
+            >UniSQ staff profile</a>.
         </p>
     
         <p>
-            I completed my master's thesis at KU Leuven (Belgium), where I focused on the direct imaging 
-            of exoplanets. Much of the code from that work is available on my GitHub. I am currently 
-            expanding this research into a manuscript for submission to a peer-reviewed journal.
-        </p>
-    
-        <p>
-            In parallel, I continue my work at UniSQ on a range of astrophysical projects. My current efforts 
-            include optical instrument design, CubeSat development, and broader initiatives to democratize 
-            space-based observational astronomy. I’m always open to collaboration—especially on projects 
-            involving exoplanet characterization, modeling, observation, or astronomical hardware and software instrumentation. 
-        </p>
-
-        <p>
-            My staff profile page is located at: https://staffprofile.unisq.edu.au/Profile/David-Petit
-        </p>
-    
-        <p>
-            Feel free to reach out! My native language is English, but I am also happy to communicate in 
-            Español, 中文, Nederlands, 日本語, Français, 한국어, and عربي.  
-            Thank you for your interest!
+            Feel free to reach out! My native language is English, but I am
+            also happy to communicate in Español, 中文, Nederlands, 日本語,
+            Français, 한국어, and عربي. Thank you for your interest!
         </p>
     </section>
 
